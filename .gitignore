@@ -3,3 +3,5 @@
 lib/.idea
 lib/target/release/build
 lib/target/release/deps
+lib/target/release/.fingerprint
+lib/target/debug

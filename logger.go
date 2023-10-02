@@ -10,10 +10,10 @@ type Logger struct {
 }
 
 // New creates a new logger instance
-func New(prefix string) *Logger {
-	initialize(prefix)
+func New(nodeConfig string) *Logger {
+	initialize(nodeConfig)
 	return &Logger{
-		logger: log.New(os.Stdout, prefix, log.LstdFlags),
+		logger: log.New(os.Stdout, nodeConfig, log.LstdFlags),
 	}
 }
 
